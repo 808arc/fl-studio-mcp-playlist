@@ -69,17 +69,17 @@ fi
 
 echo "✅ FL Studio scripts directory found"
 
-# Copy ComposeWithLLM.pyscript
-echo "📋 Copying ComposeWithLLM.pyscript to FL Studio..."
-COMPOSE_SCRIPT="$SCRIPT_DIR/piano_roll/ComposeWithLLM.pyscript"
+# Copy BeginLLMInteraction.pyscript
+echo "📋 Copying BeginLLMInteraction.pyscript to FL Studio..."
+COMPOSE_SCRIPT="$SCRIPT_DIR/piano_roll/BeginLLMInteraction.pyscript"
 if [ ! -f "$COMPOSE_SCRIPT" ]; then
-    echo "❌ ComposeWithLLM.pyscript not found at $COMPOSE_SCRIPT"
+    echo "❌ BeginLLMInteraction.pyscript not found at $COMPOSE_SCRIPT"
     exit 1
 fi
 if cp "$COMPOSE_SCRIPT" "$FL_SCRIPTS_DIR/"; then
-    echo "✅ ComposeWithLLM.pyscript installed"
+    echo "✅ BeginLLMInteraction.pyscript installed"
 else
-    echo "❌ Failed to copy ComposeWithLLM.pyscript"
+    echo "❌ Failed to copy BeginLLMInteraction.pyscript"
     exit 1
 fi
 
@@ -111,7 +111,7 @@ echo "   ./mcp/install_mcp_for_claude.sh"
 echo
 echo "2️⃣  Start using FL Studio with Claude:"
 echo "   - Open FL Studio"
-echo "   - Run ComposeWithLLM once (Tools → Scripting → ComposeWithLLM)"
+echo "   - Run * once (Tools → Scripting → *)"
 echo "   - Start Claude and begin composing!"
 echo
 echo "3️⃣  (Optional) Generate configs for other AI assistants:"
